@@ -108,10 +108,10 @@ extension Slot: Decodable {
             return CGFloat(value)
         }
         guard
-            let x = getValue(origin, 0),
-            let y = getValue(origin, 1),
-            let width = getValue(size, 0),
-            let height = getValue(size, 1)
+            var x = getValue(origin, 0),
+            var y = getValue(origin, 1),
+            var width = getValue(size, 0),
+            var height = getValue(size, 1)
         else {
             throw NSError(
                 domain: NSCocoaErrorDomain,
@@ -130,9 +130,17 @@ extension Slot: Decodable {
             }
         }
 
+        x = makeBoundaryAlignedValue(x)
+        let maxX = makeBoundaryAlignedValue(x + width)
+        width = maxX - x
+
+        y = makeBoundaryAlignedValue(y)
+        let maxY = makeBoundaryAlignedValue(y + height)
+        height = maxY - y
+
         boundingBox = CGRect(
-            x: makeBoundaryAlignedValue(x),
-            y: makeBoundaryAlignedValue(y),
+            x: x,
+            y: y,
             width: width,
             height: height
         )
