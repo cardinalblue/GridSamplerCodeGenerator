@@ -1,0 +1,11 @@
+{
+    "source_path": "./Source.json",
+
+    "export_path": "./",
+
+    "hpp_template_path": "./Template/Sampler.hpp",
+    
+    "cpp_template_path": "./Template/Sampler.cpp",
+
+    "sampler_name": "AdditionSVG"
+}
