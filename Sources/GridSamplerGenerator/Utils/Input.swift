@@ -120,6 +120,11 @@ extension Slot: Decodable {
             )
         }
 
+        guard dPath == nil else {
+            boundingBox = CGRect(x: x, y: y, width: width, height:  height)
+            return
+        }
+
         let makeBoundaryAlignedValue: (_ value: CGFloat) -> CGFloat = { value in
             if value > 639 {
                 return 640

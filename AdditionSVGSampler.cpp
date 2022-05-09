@@ -5,7 +5,7 @@
 #include <Util.hpp>
 
 
-const std::string gGridName("additionsvg: ");
+const std::string gGridName("addition_svg: ");
 
 AdditionSVGSampler::AdditionSVGSampler(int layoutPolicy,
                        int genPolicy)
@@ -14,7 +14,6 @@ AdditionSVGSampler::AdditionSVGSampler(int layoutPolicy,
     mBucket.resize(5);
     // A temporary realGrid list container.
     std::vector<Grid> tmpGrids;
-
     
     // ===== For 1 photo =====
 
@@ -195,28 +194,28 @@ AdditionSVGSampler::AdditionSVGSampler(int layoutPolicy,
 
     tmpGrids.push_back(Grid(gGridName + "3-27"));
     tmpGrids.back().slots.push_back(RectSlot(320.0f, 0.0f, 320.0f, 213.00001525878906f));
-    tmpGrids.back().slots.push_back(RectSlot(320.0f, 427.0f, 320.0f, 213.00001525878906f));
+    tmpGrids.back().slots.push_back(RectSlot(320.0f, 427.0f, 320.0f, 213.0f));
     tmpGrids.back().slots.push_back(RectSlot(0.0f, 212.99998474121094f, 320.0f, 214.00001525878906f));
 
     tmpGrids.push_back(Grid(gGridName + "3-26"));
     tmpGrids.back().slots.push_back(RectSlot(0.0f, 217.0f, 213.3000030517578f, 213.3000030517578f));
     tmpGrids.back().slots.push_back(RectSlot(213.30078125f, 217.0f, 213.3000030517578f, 213.3000030517578f));
-    tmpGrids.back().slots.push_back(RectSlot(426.599609375f, 217.0f, 213.3000030517578f, 213.3000030517578f));
+    tmpGrids.back().slots.push_back(RectSlot(426.599609375f, 217.0f, 213.400390625f, 213.3000030517578f));
 
     tmpGrids.push_back(Grid(gGridName + "3-25"));
     tmpGrids.back().slots.push_back(RectSlot(0.0f, 0.0f, 350.0f, 213.3000030517578f));
     tmpGrids.back().slots.push_back(RectSlot(0.0f, 213.30078125f, 350.0f, 213.3000030517578f));
-    tmpGrids.back().slots.push_back(RectSlot(0.0f, 426.599609375f, 350.0f, 213.3000030517578f));
+    tmpGrids.back().slots.push_back(RectSlot(0.0f, 426.599609375f, 350.0f, 213.400390625f));
 
     tmpGrids.push_back(Grid(gGridName + "3-24"));
     tmpGrids.back().slots.push_back(RectSlot(290.0f, 0.0f, 350.0f, 213.3000030517578f));
     tmpGrids.back().slots.push_back(RectSlot(290.0f, 213.30078125f, 350.0f, 213.3000030517578f));
-    tmpGrids.back().slots.push_back(RectSlot(290.0f, 426.599609375f, 350.0f, 213.3000030517578f));
+    tmpGrids.back().slots.push_back(RectSlot(290.0f, 426.599609375f, 350.0f, 213.400390625f));
 
     tmpGrids.push_back(Grid(gGridName + "3-23"));
     tmpGrids.back().slots.push_back(RectSlot(0.0f, 240.0f, 360.0f, 400.0f));
     tmpGrids.back().slots.push_back(RectSlot(360.0f, 239.99998474121094f, 280.0f, 280.0f));
-    tmpGrids.back().slots.push_back(RectSlot(239.99998474121094f, 0.0f, 400.0f, 240.0f));
+    tmpGrids.back().slots.push_back(RectSlot(239.99998474121094f, 0.0f, 400.00001525878906f, 240.0f));
 
     tmpGrids.push_back(Grid(gGridName + "3-22"));
     tmpGrids.back().slots.push_back(RectSlot(0.0f, 400.0f, 320.0f, 240.0f));
@@ -258,7 +257,7 @@ AdditionSVGSampler::AdditionSVGSampler(int layoutPolicy,
     tmpGrids.back().slots.push_back(RectSlot(180.0f, 320.0f, 230.0f, 240.0f));
 
     tmpGrids.push_back(Grid(gGridName + "4-35"));
-    tmpGrids.back().slots.push_back(RectSlot(427.00067138671875f, 0.0f, 213.33334350585938f, 260.0000305175781f));
+    tmpGrids.back().slots.push_back(RectSlot(427.00067138671875f, 0.0f, 212.99932861328125f, 260.0000305175781f));
     tmpGrids.back().slots.push_back(RectSlot(110.333984375f, 319.9999694824219f, 420.0000305175781f, 280.0000305175781f));
     tmpGrids.back().slots.push_back(RectSlot(214.0006561279297f, 0.0f, 213.33334350585938f, 260.0000305175781f));
     tmpGrids.back().slots.push_back(RectSlot(0.0f, 0.0f, 213.33334350585938f, 260.0000305175781f));
@@ -267,19 +266,19 @@ AdditionSVGSampler::AdditionSVGSampler(int layoutPolicy,
     tmpGrids.back().slots.push_back(RectSlot(0.0f, 380.0f, 213.3333282470703f, 260.0f));
     tmpGrids.back().slots.push_back(RectSlot(110.0f, 40.0f, 420.0f, 280.0f));
     tmpGrids.back().slots.push_back(RectSlot(213.0f, 380.0f, 213.3333282470703f, 260.0f));
-    tmpGrids.back().slots.push_back(RectSlot(427.0f, 380.0f, 213.3333282470703f, 260.0f));
+    tmpGrids.back().slots.push_back(RectSlot(427.0f, 380.0f, 213.0f, 260.0f));
 
     tmpGrids.push_back(Grid(gGridName + "4-33"));
     tmpGrids.back().slots.push_back(RectSlot(0.0f, 213.0f, 249.0f, 427.0f));
-    tmpGrids.back().slots.push_back(RectSlot(391.0f, 0.0f, 249.00003051757812f, 427.0000305175781f));
+    tmpGrids.back().slots.push_back(RectSlot(391.0f, 0.0f, 249.0f, 427.0000305175781f));
     tmpGrids.back().slots.push_back(RectSlot(0.0f, 0.0f, 249.0f, 213.0f));
-    tmpGrids.back().slots.push_back(RectSlot(391.0f, 426.9999694824219f, 249.00001525878906f, 213.00001525878906f));
+    tmpGrids.back().slots.push_back(RectSlot(391.0f, 426.9999694824219f, 249.0f, 213.00003051757812f));
 
     tmpGrids.push_back(Grid(gGridName + "4-32"));
     tmpGrids.back().slots.push_back(RectSlot(0.0f, 0.0f, 427.0f, 249.00001525878906f));
-    tmpGrids.back().slots.push_back(RectSlot(213.0f, 391.0f, 427.0000305175781f, 249.00006103515625f));
-    tmpGrids.back().slots.push_back(RectSlot(426.998046875f, 0.0f, 213.00001525878906f, 249.00001525878906f));
-    tmpGrids.back().slots.push_back(RectSlot(0.0f, 391.0f, 213.00003051757812f, 249.00003051757812f));
+    tmpGrids.back().slots.push_back(RectSlot(213.0f, 391.0f, 427.0f, 249.0f));
+    tmpGrids.back().slots.push_back(RectSlot(426.998046875f, 0.0f, 213.001953125f, 249.00001525878906f));
+    tmpGrids.back().slots.push_back(RectSlot(0.0f, 391.0f, 213.00003051757812f, 249.0f));
 
     tmpGrids.push_back(Grid(gGridName + "4-31"));
     tmpGrids.back().slots.push_back(RectSlot(320.0f, 0.0f, 320.0f, 200.0f));
@@ -297,7 +296,7 @@ AdditionSVGSampler::AdditionSVGSampler(int layoutPolicy,
     tmpGrids.back().slots.push_back(RectSlot(0.0f, 400.0f, 160.00003051757812f, 240.0f));
     tmpGrids.back().slots.push_back(RectSlot(160.0f, 400.0f, 160.0f, 240.0f));
     tmpGrids.back().slots.push_back(RectSlot(320.0f, 401.0f, 160.0f, 239.0f));
-    tmpGrids.back().slots.push_back(RectSlot(159.99998474121094f, 0.0f, 480.00006103515625f, 400.0f));
+    tmpGrids.back().slots.push_back(RectSlot(159.99998474121094f, 0.0f, 480.00001525878906f, 400.0f));
 
     tmpGrids.push_back(Grid(gGridName + "4-28"));
     tmpGrids.back().slots.push_back(RectSlot(0.0f, 446.0f, 200.0f, 194.0f));
@@ -309,7 +308,7 @@ AdditionSVGSampler::AdditionSVGSampler(int layoutPolicy,
     tmpGrids.back().slots.push_back(RectSlot(0.0f, 0.0f, 320.0f, 200.00003051757812f));
     tmpGrids.back().slots.push_back(RectSlot(0.0f, 199.99998474121094f, 320.0f, 200.00003051757812f));
     tmpGrids.back().slots.push_back(RectSlot(319.9999694824219f, 0.0f, 320.0000305175781f, 400.0f));
-    tmpGrids.back().slots.push_back(RectSlot(0.0f, 400.0f, 320.0f, 240.00001525878906f));
+    tmpGrids.back().slots.push_back(RectSlot(0.0f, 400.0f, 320.0f, 240.0f));
 
     tmpGrids.push_back(Grid(gGridName + "4-26"));
     tmpGrids.back().slots.push_back(RectSlot(310.0f, 0.0f, 330.0f, 213.0f));

@@ -108,7 +108,7 @@ extension CodeGenerator {
         return template
             .replacingOccurrences(of: "${{Content}}", with: code)
             .replacingOccurrences(of: "${{SamplerName}}", with: Configs.shared.samplerName)
-            .replacingOccurrences(of: "${{LowerCaseSamplerName}}", with: Configs.shared.samplerName.lowercased())
+            .replacingOccurrences(of: "${{SnakeCaseSamplerName}}", with: Configs.shared.samplerName.snakeCase())
             .replacingOccurrences(of: "${{GridCount}}", with: "\(gridsGroupCount)")
     }
 }

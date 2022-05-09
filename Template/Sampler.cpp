@@ -5,7 +5,7 @@
 #include <Util.hpp>
 
 
-const std::string gGridName("${{LowerCaseSamplerName}}: ");
+const std::string gGridName("${{SnakeCaseSamplerName}}: ");
 
 ${{SamplerName}}Sampler::${{SamplerName}}Sampler(int layoutPolicy,
                        int genPolicy)
