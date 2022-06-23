@@ -1,3 +1,3 @@
 swift build -c release
-mv '.build/arm64-apple-macosx/release/GridSamplerGenerator' './GridSamplerGenerator'
+mv '.build/release/GridSamplerGenerator' './GridSamplerGenerator'
 echo "Success"

@@ -143,6 +143,16 @@ extension Slot: Decodable {
         let maxY = makeBoundaryAlignedValue(y + height)
         height = maxY - y
 
+        if dPath == nil {
+            let roundValue: (_ value: CGFloat) -> CGFloat = { value in
+                return round(value * 1000) / 1000
+            }
+            x = roundValue(x)
+            y = roundValue(y)
+            width = roundValue(width)
+            height = roundValue(height)
+        }
+
         boundingBox = CGRect(
             x: x,
             y: y,
